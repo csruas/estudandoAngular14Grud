@@ -1,135 +1,101 @@
-.acoes {
+.botoes {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+}
+.botoes button {
+  margin-left: 10px;
+  margin-right: 2px;
 }
 
-.botao {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
-}
-
-.criar-pensamentos {
-  padding: 2rem 0;
-}
-
-.criar-pensamentos form {
-  background: #C4EDFF;
-
-  border: none;
-  border-radius: 20px;
-
+.mural {
   display: flex;
-  flex-direction: column;
-
-  padding: 2rem;
-}
-
-.criar-pensamentos form label {
-  color: #154580;
-  font-weight: bold;
-  margin: 0 0 1rem;
-}
-
-.criar-pensamentos form .input {
-  border: none;
-  height: 40px;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  margin: 0.5rem 0 2rem;
-}
-
-
-.criar-pensamentos form .textarea {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  margin: 0.5rem 0 2rem;
-}
-
-.container-radio {
-  display: flex;
-  gap: 2.5rem;
   flex-wrap: wrap;
-}
-
-.modelos {
-  display: flex;
-  gap: 2.5rem;
-  border: 1px solid red;
-}
-
-.modelo {
-  background-color: #F8F9FE;
-  padding: 1rem;
-  max-width: 250px;
+  gap: 2rem;
+  justify-content: center;
   margin: 1rem 0 2rem;
 }
 
-.modelo .conteudo {
-  margin: 1rem auto;
-  word-wrap: break-word;
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.modelo .autoria {
-  word-wrap: break-word;
+.sem-pensamentos {
+  text-align: center;
+  padding: 2rem 0 5rem;
 }
 
-.radio {
-  margin: 0;
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.modelo1 {
-  box-shadow: 8px 8px 0px #154580;
-}
-
-.modelo2 {
-  box-shadow: 8px 8px 0px #6BD1FF;
-}
-
-.modelo3 {
-  box-shadow: 8px 8px 0px #84EEC1;
-}
-
-input[type='radio'] {
-  display: none;
-}
-
-.radio-modelo label {
+.buscar-pensamentos {
+  background: #F8F9FE;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 44px;
+  left: 421px;
+  top: 490px;
+  width: 510px;
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  text-align: center;
+  align-self: center;
 }
 
-.custom-radio {
-  border: 1px solid #154580;
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
+.buscar-pensamentos img {
+  padding-right: 15px;
 }
 
-.custom-radio,
-span {
-  transition: 0.5s ease;
-  color: #154580;
+input::placeholder {
+  color: #C4C4C4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
 }
 
-.custom-radio span {
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: transparent;
-  border-radius: 50%;
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 
-input[type='radio']:checked+.custom-radio {
-  border-color: #154580;
+.filtro {
+  width: 100%;
+  height: 100%;
+  left: 437px;
+  top: 537px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  padding-left: 15px;
+  border-radius: 10px;
 }
 
-input[type='radio']:checked+.custom-radio span {
-  background: #154580;
+@media screen and (min-width: 216px) {
+  .buscar-pensamentos {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 396px) {
+  .buscar-pensamentos {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .buscar-pensamentos {
+    width: 510px;
+  }
 }
